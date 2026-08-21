@@ -1302,11 +1302,22 @@ div.fig__img img {
   justify-content: center;
   background: rgba(20, 20, 20, 0.93);
   opacity: 0;
-  transition: opacity var(--dur-fast) var(--ease-standard);
+  /* 关闭态不拦截指针：类选择器的 display:flex 会盖过 hidden 属性的 UA 样式，
+     必须显式声明，否则透明遮罩常驻、关闭后点不到页面上的图 */
+  pointer-events: none;
+  visibility: hidden;
+  transition: opacity var(--dur-fast) var(--ease-standard),
+              visibility var(--dur-fast) var(--ease-standard);
 }
 
 .lightbox.is-open {
   opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.lightbox[hidden] {
+  display: none;
 }
 
 .lightbox__stage {
