@@ -563,7 +563,7 @@ div.fig__img {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  min-height: 120px;
+  min-height: 0;
 }
 
 div.fig__img img {
@@ -1265,10 +1265,19 @@ div.fig__img img {
 }
 
 /* ==========================================================================
+   14b. 大屏适配 (2K / 2560×1440 及以上宽屏)
+   ========================================================================== */
+@media (min-width: 1920px) {
+  .slide__inner {
+    max-width: 1700px;
+  }
+}
+
+/* ==========================================================================
    15. 打印样式（PDF 导出用 · 每张幻灯片一页 A4 横版，共 10 页）
    ========================================================================== */
 @page {
-  size: A4 landscape;
+  size: 297mm 210mm;
   margin: 0;
 }
 
@@ -1284,6 +1293,7 @@ div.fig__img img {
     overflow: visible !important;
     height: auto !important;
     width: 100% !important;
+    font-size: 13.5px !important;
   }
 
   .deck, #deck {
@@ -1295,10 +1305,11 @@ div.fig__img img {
 
   .slide {
     display: block !important;
-    width: 100% !important;
-    min-height: 0 !important;
-    height: 100vh !important;
-    max-height: 100vh !important;
+    width: 297mm !important;
+    max-width: 297mm !important;
+    height: 210mm !important;
+    max-height: 210mm !important;
+    min-height: 210mm !important;
     page-break-after: always !important;
     break-after: page !important;
     page-break-inside: avoid !important;
@@ -1306,6 +1317,7 @@ div.fig__img img {
     overflow: hidden !important;
     position: relative !important;
     background-color: var(--paper) !important;
+    box-sizing: border-box !important;
   }
 
   .slide.blueprint-panel {
@@ -1320,10 +1332,14 @@ div.fig__img img {
   }
 
   .slide__inner {
-    padding: 36px 44px !important;
+    padding: 24px 36px 28px 36px !important;
     max-width: 100% !important;
-    height: 100% !important;
+    height: 210mm !important;
+    max-height: 210mm !important;
     box-sizing: border-box !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
   }
 
   /* 隐藏所有浮动导航、图签栏与调试元素，防止遮挡正文与生成多余页面 */
@@ -1348,4 +1364,34 @@ div.fig__img img {
     break-inside: avoid !important;
   }
 
+  /* 打印时各幻灯片特定图片高度限制，确保严格 1 页不溢出 */
+  #s6 .fig__img {
+    height: 170px !important;
+    max-height: 170px !important;
+  }
+
+  #s7 .fig__img {
+    height: 75px !important;
+    max-height: 75px !important;
+  }
+
+  #s8 .fig__img[style*="height: 160px"] {
+    height: 130px !important;
+    max-height: 130px !important;
+  }
+
+  #s8 .fig__img[style*="height: 100px"] {
+    height: 75px !important;
+    max-height: 75px !important;
+  }
+
+  #s9 .fig__img[style*="height: 160px"] {
+    height: 130px !important;
+    max-height: 130px !important;
+  }
+
+  #s9 .fig__img[style*="height: 100px"] {
+    height: 75px !important;
+    max-height: 75px !important;
+  }
 }

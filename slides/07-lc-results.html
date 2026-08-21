@@ -19,35 +19,35 @@
       <!-- Left Column: Metrics & Theoretical Grounding (Col 6) -->
       <div class="col-6 reveal">
         <!-- 4 Key Quantitative Metrics Grid -->
-        <div class="grid-12" style="margin-bottom: 16px;">
+        <div class="grid-12" style="margin-bottom: 8px;">
           <div class="col-6">
-            <div class="stat-frame">
-              <div class="stat-frame__num is-red">+42.8%</div>
-              <div class="stat-frame__label">900s 小汽车替代出行时间较 MAPPO 提升</div>
+            <div class="stat-frame" style="padding: 8px 12px;">
+              <div class="stat-frame__num is-red" style="font-size: 2rem;">+42.8%</div>
+              <div class="stat-frame__label">900s 小汽车替代出行时间提升</div>
             </div>
           </div>
           <div class="col-6">
-            <div class="stat-frame">
-              <div class="stat-frame__num is-red">-41.9%</div>
+            <div class="stat-frame" style="padding: 8px 12px;">
+              <div class="stat-frame__num is-red" style="font-size: 2rem;">-41.9%</div>
               <div class="stat-frame__label">算法性流失率大幅降低较 MAPPO</div>
             </div>
           </div>
           <div class="col-6">
-            <div class="stat-frame">
-              <div class="stat-frame__num">70.68%</div>
+            <div class="stat-frame" style="padding: 8px 12px;">
+              <div class="stat-frame__num" style="font-size: 2rem;">70.68%</div>
               <div class="stat-frame__label">长期需求出清稳态服务率</div>
             </div>
           </div>
           <div class="col-6">
-            <div class="stat-frame">
-              <div class="stat-frame__num is-red">2.44%</div>
-              <div class="stat-frame__label">消融实验：移除边级决策模块后服务率骤降</div>
+            <div class="stat-frame" style="padding: 8px 12px;">
+              <div class="stat-frame__num is-red" style="font-size: 2rem;">2.44%</div>
+              <div class="stat-frame__label">消融：移除边级决策后服务率</div>
             </div>
           </div>
         </div>
 
-        <div class="principle-list">
-          <div class="principle-item is-highlight">
+        <div class="principle-list" style="gap: 8px;">
+          <div class="principle-item is-highlight" style="padding: 10px 14px;">
             <div class="principle-head">
               <span>01 / 双指标联动与尾部风险约束</span>
               <span class="chip">空间公平</span>
@@ -57,7 +57,7 @@
             </div>
           </div>
 
-          <div class="principle-item">
+          <div class="principle-item" style="padding: 10px 14px;">
             <div class="principle-head">
               <span>02 / 真实场景落地与实地调研</span>
               <span class="chip">交科赛省三</span>
@@ -68,7 +68,7 @@
           </div>
         </div>
 
-        <div class="link-row" style="margin-top: 16px;">
+        <div class="link-row" style="margin-top: 10px;">
           <a class="btn btn--primary" href="https://github.com/Jonah-Wu23/Churn-Aware-GNN-RL" target="_blank" rel="noopener noreferrer">访问 GitHub 开源仓库</a>
           <a class="btn btn--ghost" href="#s8">下一案例：HSR Partner Harness</a>
         </div>
@@ -80,11 +80,11 @@
           <!-- Figure 1: Short-term Perf -->
           <div class="col-6">
             <div class="fig">
-              <div class="fig__img">
+              <div class="fig__img" style="height: 90px;">
                 <img src="assets/img/lc-perf.png" alt="900秒短期运营窗口下的性能对比" loading="lazy">
               </div>
               <div class="fig__caption">
-                <span>FIG 07-1 / 900s 运营窗口性能对比</span>
+                <span>FIG 07-1 / 900s 性能对比</span>
                 <span class="dim">+42.8% 时间 / -41.9% 流失</span>
               </div>
             </div>
@@ -93,11 +93,11 @@
           <!-- Figure 2: Steady-state Perf -->
           <div class="col-6">
             <div class="fig">
-              <div class="fig__img">
+              <div class="fig__img" style="height: 90px;">
                 <img src="assets/img/lc-steady.png" alt="长期需求出清稳态下的性能对比" loading="lazy">
               </div>
               <div class="fig__caption">
-                <span>FIG 07-2 / 长期稳态需求出清</span>
+                <span>FIG 07-2 / 长期稳态出清</span>
                 <span class="dim">稳态服务率 70.68%</span>
               </div>
             </div>
@@ -106,12 +106,12 @@
           <!-- Figure 3: Ablation Study -->
           <div class="col-6">
             <div class="fig">
-              <div class="fig__img">
+              <div class="fig__img" style="height: 90px;">
                 <img src="assets/img/lc-ablation.png" alt="核心网络组件的消融实验" loading="lazy">
               </div>
               <div class="fig__caption">
-                <span>FIG 07-3 / 核心网络消融实验</span>
-                <span class="dim">无边决策服务率降至 2.44%</span>
+                <span>FIG 07-3 / 网络消融实验</span>
+                <span class="dim">无边决策降至 2.44%</span>
               </div>
             </div>
           </div>
@@ -119,12 +119,12 @@
           <!-- Figure 4: Console UI -->
           <div class="col-6">
             <div class="fig">
-              <div class="fig__img">
+              <div class="fig__img" style="height: 90px;">
                 <img src="assets/img/lc-console.png" alt="系统控制台界面与OSM调度监控大屏" loading="lazy">
               </div>
               <div class="fig__caption">
-                <span>FIG 07-4 / 调度控制台大屏</span>
-                <span class="dim">OSM 底图实时路网监控</span>
+                <span>FIG 07-4 / 调度大屏</span>
+                <span class="dim">OSM 实时监控</span>
               </div>
             </div>
           </div>
@@ -132,7 +132,7 @@
           <!-- Figure 5: Award Certificate -->
           <div class="col-12">
             <div class="fig">
-              <div class="fig__img">
+              <div class="fig__img" style="height: 80px;">
                 <img src="assets/img/lc-award.jpg" alt="全国大学生交通运输科技大赛陕西赛区三等奖证书" loading="lazy">
               </div>
               <div class="fig__caption">
