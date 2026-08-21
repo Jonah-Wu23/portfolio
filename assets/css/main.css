@@ -1271,6 +1271,156 @@ div.fig__img img {
   .slide__inner {
     max-width: 1700px;
   }
+
+  .fig__img--chart {
+    height: 118px !important;
+  }
+
+  .fig__img--cert {
+    height: 306px !important;
+  }
+}
+
+/* Slide 7 图表与竖版证书的基准尺寸（可被上方宽屏查询覆盖） */
+.fig__img--chart {
+  height: 98px;
+}
+
+.fig__img--cert {
+  height: 262px;
+}
+
+/* ==========================================================================
+   14c. 图片查看灯箱 (.lightbox) — 仅线上交互使用
+   ========================================================================== */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(20, 20, 20, 0.93);
+  opacity: 0;
+  transition: opacity var(--dur-fast) var(--ease-standard);
+}
+
+.lightbox.is-open {
+  opacity: 1;
+}
+
+.lightbox__stage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: min(1560px, 92vw);
+  margin: 0 64px;
+}
+
+.lightbox__img {
+  max-width: min(1560px, 90vw);
+  max-height: 78vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  background: #FFF;
+  border: 1px solid rgba(237, 241, 255, 0.28);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.55);
+}
+
+.lightbox__caption {
+  position: absolute;
+  left: 50%;
+  bottom: clamp(20px, 4vh, 44px);
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  max-width: 90vw;
+  padding: 8px 18px;
+  border: 1px solid rgba(237, 241, 255, 0.3);
+  background: rgba(20, 20, 20, 0.88);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: rgba(237, 241, 255, 0.9);
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+
+.lightbox__no {
+  color: var(--red);
+  font-weight: 700;
+}
+
+.lightbox__count {
+  color: rgba(237, 241, 255, 0.55);
+}
+
+.lightbox__close,
+.lightbox__nav {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: rgba(237, 241, 255, 0.85);
+  background: rgba(20, 20, 20, 0.6);
+  border: 1px solid rgba(237, 241, 255, 0.3);
+  cursor: pointer;
+  transition: border-color var(--dur-fast) var(--ease-standard),
+              color var(--dur-fast) var(--ease-standard),
+              background-color var(--dur-fast) var(--ease-standard);
+  z-index: 2;
+}
+
+.lightbox__close {
+  top: clamp(16px, 3vh, 32px);
+  right: clamp(16px, 3vw, 40px);
+  padding: 8px 16px;
+}
+
+.lightbox__nav {
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 64px;
+  font-size: 1.25rem;
+}
+
+.lightbox__nav--prev { left: clamp(10px, 2vw, 28px); }
+.lightbox__nav--next { right: clamp(10px, 2vw, 28px); }
+
+.lightbox__close:hover,
+.lightbox__nav:hover {
+  border-color: var(--red);
+  color: #FFF;
+  background: rgba(227, 6, 19, 0.25);
+}
+
+.lightbox__close:focus-visible,
+.lightbox__nav:focus-visible {
+  outline: 2px solid var(--red);
+  outline-offset: 2px;
+}
+
+/* 线上图框的可点击放大暗示（触屏设备不显示悬停光标） */
+@media (hover: hover) and (pointer: fine) {
+  .fig__img[role="button"] {
+    cursor: zoom-in;
+  }
+
+  .fig__img[role="button"]:hover img {
+    opacity: 0.92;
+  }
+}
+
+.fig__img[role="button"]:focus-visible {
+  outline: 2px solid var(--red);
+  outline-offset: -2px;
 }
 
 /* ==========================================================================
@@ -1370,9 +1520,19 @@ div.fig__img img {
     max-height: 170px !important;
   }
 
-  #s7 .fig__img {
-    height: 75px !important;
-    max-height: 75px !important;
+  #s7 .fig__img--chart {
+    height: 74px !important;
+    max-height: 74px !important;
+  }
+
+  #s7 .fig__img--cert {
+    height: 206px !important;
+    max-height: 206px !important;
+  }
+
+  /* 灯箱为纯线上交互组件，打印/PDF 一律隐藏 */
+  .lightbox {
+    display: none !important;
   }
 
   #s8 .fig__img[style*="height: 160px"] {

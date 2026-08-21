@@ -3,3 +3,5 @@ __pycache__/
 *.log
 .DS_Store
 build_index.py
+_pdf_build.html
+export_pdf.py

@@ -317,9 +317,18 @@
     }
   }
 
+  /**
+   * Helper: check if an overlay (e.g. image lightbox) is open and slide
+   * navigation should be suspended. Lightbox toggles .lightbox-open on <html>.
+   */
+  function isOverlayOpen() {
+    return document.documentElement.classList.contains('lightbox-open');
+  }
+
   // Wheel event listener (window capture layer, passive: true)
   function onWheel(e) {
     if (!state.isInitialized || state.slideCount === 0) return;
+    if (isOverlayOpen()) return; // 灯箱打开期间不翻页
     var deltaY = e.deltaY;
     var minDelta = state.options.wheelThreshold || 20;
     if (Math.abs(deltaY) < minDelta) return;
@@ -349,6 +358,7 @@
   // Keyboard navigation handler
   function onKeyDown(e) {
     if (!state.isInitialized || state.slideCount === 0) return;
+    if (isOverlayOpen()) return; // 灯箱打开期间不翻页（灯箱自身已接管按键）
     var target = e.target;
     var key = e.key;
     var code = e.code;
