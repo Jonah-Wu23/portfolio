@@ -1,0 +1,46 @@
+/**
+ * tokens.css - 设计令牌（唯一契约）
+ * 吴宗河作品集 · Swiss International Style × Blueprint
+ * 规范依据：作品集制作计划 §3.4.2
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600;650;700&display=swap");
+
+:root {
+  /* ==========================================================================
+     色彩令牌（Colors） - 严格遵循 §3.4.2
+     ========================================================================== */
+  --paper: #F6F6F4;                     /* 主画布（冷白） */
+  --ink: #141414;                       /* 主文字（墨黑） */
+  --ink-2: #5C5C5C;                     /* 次级文字 */
+  --line: rgba(20, 20, 20, 0.14);       /* hairline 分隔线 */
+  --red: #E30613;                       /* 瑞士红，唯一强调色 */
+  --blue: #1E3A8A;                      /* 蓝图线条（浅底尺寸线与坐标） */
+  --bp-bg: #1B2F7A;                     /* 蓝图面板底色（深蓝） */
+  --bp-line: rgba(237, 241, 255, 0.55); /* 蓝图面板网格线 */
+  --bp-ink: #EDF1FF;                    /* 蓝图面板文字 */
+
+  /* 蓝图面板辅助色（由契约色推导） */
+  --bp-line-dim: rgba(237, 241, 255, 0.15); /* 细辅助网格 */
+  --bp-ink-2: rgba(237, 241, 255, 0.72);    /* 蓝图次级文字 */
+
+  /* ==========================================================================
+     字体栈（Typography）
+     ========================================================================== */
+  --font-sans: "Inter", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", system-ui, -apple-system, sans-serif;
+  --font-mono: "IBM Plex Mono", "SF Mono", "Consolas", "Menlo", "Courier New", monospace;
+
+  /* ==========================================================================
+     几何、排版与动效基准
+     ========================================================================== */
+  --slide-pad: clamp(40px, 6vw, 96px);
+  --slide-pad-bottom: clamp(72px, 8vw, 104px);
+  --grid-gap: 24px;
+  --plate-height: 56px;
+
+  /* 过渡时长与缓动 */
+  --dur-fast: 160ms;
+  --dur-reveal: 320ms;
+  --ease-reveal: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-standard: ease;
+}
