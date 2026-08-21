@@ -12,16 +12,16 @@
       </div>
 
       <h2 class="slide-title reveal">
-        Demo 闭环：从单句偏好到跨场景主动推荐
+        Demo 闭环：说一句话，换个场景它还记着
       </h2>
 
       <div class="tagline reveal">
-        <span class="hl">可运行闭环</span> 一句话输入 · 约束建模 · 状态机推进 · 跨场景主动生效
+        <span class="hl">可运行闭环</span> 偏好怎么变成额度、存进记忆、影响排序，每一步在界面上都看得见
       </div>
     </header>
 
     <!-- Horizontal Flow Link -->
-    <div class="flow reveal" style="margin: 6px 0 14px 0;">
+    <div class="flow reveal" style="margin: 6px 0 12px 0;">
       <div class="flow__node">一句话偏好</div>
       <div class="flow__arrow"></div>
       <div class="flow__node">解析成带阈值的软约束</div>
@@ -40,7 +40,7 @@
       <!-- Scenario 1 -->
       <div class="col-4">
         <div class="fig reveal" style="margin-bottom: 10px;">
-          <div class="fig__img" style="height: 155px;">
+          <div class="fig__img" style="height: 140px;">
             <img src="assets/img/nb-run-1.png" alt="默认最快方案" loading="lazy" />
           </div>
           <div class="fig__caption">
@@ -54,7 +54,7 @@
             <span class="chip">置信度 96%</span>
           </div>
           <div class="principle-desc">
-            输入「宁愿晚 5 分钟，也不走小路」；解析卡片识别避开小路与 5 分钟额度，改推民生路主线 25 分钟，额度尺显示用掉 4/5 分钟。
+            输入「宁愿晚 5 分钟，也不走小路」，解析卡片先给出避开小路、额度 5 分钟，然后推荐改成民生路主线 25 分钟，额度尺显示用掉 4/5。
           </div>
         </div>
       </div>
@@ -62,12 +62,12 @@
       <!-- Scenario 2 -->
       <div class="col-4">
         <div class="fig reveal" style="margin-bottom: 10px;">
-          <div class="fig__img" style="height: 155px;">
-            <img src="assets/img/nb-run-2.png" alt="说出偏好后改推并解释" loading="lazy" />
+          <div class="fig__img" style="height: 140px;">
+            <img src="assets/img/nb-run-2.png" alt="说出偏好后改推荐并解释" loading="lazy" />
           </div>
           <div class="fig__caption">
             <span>FIG 04-2 · 偏好生效</span>
-            <span>改推并解释</span>
+            <span>改推荐并解释</span>
           </div>
         </div>
         <div class="principle-item reveal" style="padding: 10px 14px;">
@@ -76,7 +76,7 @@
             <span class="chip">偏好代价 +5</span>
           </div>
           <div class="principle-desc">
-            切换场景无需重新说明，记忆主动生效；河堤小道标注偏好代价 +5 分钟掉至备选，自动改推 21 分钟的兴业街主线。
+            换到接人场景，什么都不用再说。带 9 分钟小路的河堤小道掉到了第二名，推荐改成兴业街主线 21 分钟，解释里还引用着当初那句原话。
           </div>
         </div>
       </div>
@@ -84,7 +84,7 @@
       <!-- Scenario 3 -->
       <div class="col-4">
         <div class="fig reveal" style="margin-bottom: 10px;">
-          <div class="fig__img" style="height: 155px;">
+          <div class="fig__img" style="height: 140px;">
             <img src="assets/img/nb-run-3.png" alt="换场景记忆主动生效" loading="lazy" />
           </div>
           <div class="fig__caption">
@@ -95,26 +95,52 @@
         <div class="principle-item reveal" style="padding: 10px 14px;">
           <div class="principle-head">
             <span>场景 3 · 周末去老街</span>
-            <span class="chip">超额不硬绕</span>
+            <span class="chip">超额不强制绕行</span>
           </div>
           <div class="principle-desc">
-            绕开小路需多花 9 分钟超出 5 分钟额度，系统不硬绕；卡片提供「把额度提到 10 分钟」操作，点击即改推环城绕行。
+            绕开小路得多花 9 分钟，超过 5 分钟额度。系统不强制绕行，明说原因，给一个「把额度提到 10 分钟」的按钮，点击之后推荐立刻改成环城绕行。
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Actions Row -->
-    <div class="link-row reveal" style="margin-top: 10px;">
-      <a class="btn btn--primary" href="https://navigation-buddy.vercel.app" target="_blank" rel="noopener noreferrer">在线体验 Web Demo ↗</a>
-      <a class="btn btn--ghost" href="https://navigation-buddy.vercel.app/selfcheck" target="_blank" rel="noopener noreferrer">自检页 (/selfcheck) ↗</a>
-      <a class="btn btn--ghost" href="#s5">下一页：工程与设计证据 →</a>
-      <span class="chip">支持拖动阈值、暂停/删除记忆与完整溯源流水</span>
+    <!-- Figma Evidence + Links Row -->
+    <div class="grid-12" style="align-items: end; margin-top: 10px;">
+      <div class="col-3">
+        <div class="fig reveal">
+          <div class="fig__img" style="height: 92px;">
+            <img src="assets/img/nb-figma-1.png" alt="Figma 设计稿：路线概览与偏好解析" loading="lazy" />
+          </div>
+          <div class="fig__caption">
+            <span>FIG 04-4 · FIGMA 设计稿</span>
+            <span>路线概览与解析</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="fig reveal">
+          <div class="fig__img" style="height: 92px;">
+            <img src="assets/img/nb-figma-3.png" alt="Figma 设计稿：重排决策与额度尺" loading="lazy" />
+          </div>
+          <div class="fig__caption">
+            <span>FIG 04-5 · FIGMA 设计稿</span>
+            <span>重排决策与额度尺</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="link-row reveal">
+          <a class="btn btn--primary" href="https://navigation-buddy.vercel.app" target="_blank" rel="noopener noreferrer">在线体验 Web Demo ↗</a>
+          <a class="btn btn--ghost" href="https://github.com/Jonah-Wu23/navigation-buddy" target="_blank" rel="noopener noreferrer">GitHub 仓库 ↗</a>
+          <a class="btn btn--ghost" href="https://www.figma.com/design/6uaUY8SpbOlius27vVEOtW/Navigation-Buddy-%E2%80%94-Product-Demo--Copy-?t=Lo09ns6Oj7srK5E6-1" target="_blank" rel="noopener noreferrer">Figma 在线设计稿 ↗</a>
+          <a class="btn btn--ghost" href="#s5">下一项目：留乘智行 →</a>
+        </div>
+      </div>
     </div>
   </div>
 
   <footer class="plate">
-    <div class="plate__no">04/10</div>
+    <div class="plate__no">04/09</div>
     <div class="plate__title">NAVIGATION BUDDY · DEMO 闭环</div>
     <div class="plate__meta">2026-08 · 制图 ZW</div>
   </footer>

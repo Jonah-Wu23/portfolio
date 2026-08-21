@@ -1,5 +1,5 @@
-<section class="slide" id="s7">
-  <div class="ghost-no" aria-hidden="true">07</div>
+<section class="slide" id="s6">
+  <div class="ghost-no" aria-hidden="true">06</div>
   <div class="cross cross--tl" aria-hidden="true"></div>
   <div class="cross cross--tr" aria-hidden="true"></div>
   <div class="cross cross--bl" aria-hidden="true"></div>
@@ -12,36 +12,36 @@
     </div>
 
     <h2 class="slide-title reveal">
-      多维性能验证与消融实验 <span class="dim">Empirical Validation, Ablation &amp; Field Research</span>
+      结果都在这里 <span class="dim">Empirical Validation, Ablation &amp; Field Research</span>
     </h2>
 
     <div class="grid-12">
-      <!-- Left Column: Metrics & Theoretical Grounding (Col 6) -->
+      <!-- Left Column: Metrics & Principles (Col 6) -->
       <div class="col-6 reveal">
         <!-- 4 Key Quantitative Metrics Grid -->
         <div class="grid-12" style="margin-bottom: 8px;">
           <div class="col-6">
             <div class="stat-frame" style="padding: 8px 12px;">
               <div class="stat-frame__num is-red" style="font-size: 2rem;">+42.8%</div>
-              <div class="stat-frame__label">900s 小汽车替代出行时间提升</div>
+              <div class="stat-frame__label">900 秒高并发，总减少小汽车出行时间（较 MAPPO）</div>
             </div>
           </div>
           <div class="col-6">
             <div class="stat-frame" style="padding: 8px 12px;">
               <div class="stat-frame__num is-red" style="font-size: 2rem;">-41.9%</div>
-              <div class="stat-frame__label">算法性流失率大幅降低较 MAPPO</div>
+              <div class="stat-frame__label">算法性流失率（较 MAPPO 基线）</div>
             </div>
           </div>
           <div class="col-6">
             <div class="stat-frame" style="padding: 8px 12px;">
               <div class="stat-frame__num" style="font-size: 2rem;">70.68%</div>
-              <div class="stat-frame__label">长期需求出清稳态服务率</div>
+              <div class="stat-frame__label">长期稳态服务率</div>
             </div>
           </div>
           <div class="col-6">
             <div class="stat-frame" style="padding: 8px 12px;">
               <div class="stat-frame__num is-red" style="font-size: 2rem;">2.44%</div>
-              <div class="stat-frame__label">消融：移除边级决策后服务率</div>
+              <div class="stat-frame__label">拆掉边级决策模块后，服务率只剩</div>
             </div>
           </div>
         </div>
@@ -49,28 +49,28 @@
         <div class="principle-list" style="gap: 8px;">
           <div class="principle-item is-highlight" style="padding: 10px 14px;">
             <div class="principle-head">
-              <span>01 / 双指标联动与尾部风险约束</span>
+              <span>01 / 双指标与尾部风险约束</span>
               <span class="chip">空间公平</span>
             </div>
             <div class="principle-desc">
-              采用服务率与 P95 等待双指标评估，针对最差 5% 乘客施加尾部等待风险约束，平衡全域调度效率与局部服务公平。
+              只看平均数会骗人。我用服务率和 P95 等待两个指标一起评估，又给最差 5% 的乘客加了尾部等待约束，免得运力全挤向热点、冷门乘客没人管。
             </div>
           </div>
 
           <div class="principle-item" style="padding: 10px 14px;">
             <div class="principle-head">
-              <span>02 / 真实场景落地与实地调研</span>
+              <span>02 / 调度大屏与实地调研</span>
               <span class="chip">交科赛省三</span>
             </div>
             <div class="principle-desc">
-              开发 OSM 底图调度监控大屏，结合西安公交枢纽实地调研验证运行约束。项目荣获全国大学生交通运输科技大赛陕西赛区三等奖。
+              调度大屏跑在 OSM 底图上，站点按风险着色、热点实时预警；我去西安公交枢纽做过实地调研，一线运营规则后来都写进了调度约束。
             </div>
           </div>
         </div>
 
         <div class="link-row" style="margin-top: 10px;">
           <a class="btn btn--primary" href="https://github.com/Jonah-Wu23/Churn-Aware-GNN-RL" target="_blank" rel="noopener noreferrer">访问 GitHub 开源仓库</a>
-          <a class="btn btn--ghost" href="#s8">下一案例：HSR Partner Harness</a>
+          <a class="btn btn--ghost" href="#s7">下一项目：HSR Partner Harness</a>
         </div>
       </div>
 
@@ -87,7 +87,7 @@
                     <img src="assets/img/lc-perf.png" alt="900秒短期运营窗口下的性能对比" loading="lazy">
                   </div>
                   <div class="fig__caption">
-                    <span>FIG 07-1 / 900s 性能对比</span>
+                    <span>FIG 06-1 / 900s 性能对比</span>
                     <span class="dim">+42.8% 时间 / -41.9% 流失</span>
                   </div>
                 </div>
@@ -100,7 +100,7 @@
                     <img src="assets/img/lc-steady.png" alt="长期需求出清稳态下的性能对比" loading="lazy">
                   </div>
                   <div class="fig__caption">
-                    <span>FIG 07-2 / 长期稳态出清</span>
+                    <span>FIG 06-2 / 长期稳态出清</span>
                     <span class="dim">稳态服务率 70.68%</span>
                   </div>
                 </div>
@@ -113,8 +113,8 @@
                     <img src="assets/img/lc-ablation.png" alt="核心网络组件的消融实验" loading="lazy">
                   </div>
                   <div class="fig__caption">
-                    <span>FIG 07-3 / 网络消融实验</span>
-                    <span class="dim">无边决策降至 2.44%</span>
+                    <span>FIG 06-3 / 消融实验</span>
+                    <span class="dim">移除边级决策后 2.44%</span>
                   </div>
                 </div>
               </div>
@@ -126,7 +126,7 @@
                     <img src="assets/img/lc-console.png" alt="系统控制台界面与OSM调度监控大屏" loading="lazy">
                   </div>
                   <div class="fig__caption">
-                    <span>FIG 07-4 / 调度大屏</span>
+                    <span>FIG 06-4 / 调度大屏</span>
                     <span class="dim">OSM 实时监控</span>
                   </div>
                 </div>
@@ -141,7 +141,7 @@
                 <img src="assets/img/lc-award.jpg" alt="全国大学生交通运输科技大赛陕西赛区三等奖证书" loading="lazy">
               </div>
               <div class="fig__caption">
-                <span>FIG 07-5 / 获奖证书</span>
+                <span>FIG 06-5 / 获奖证书</span>
                 <span class="dim">省赛区三等奖</span>
               </div>
             </div>
@@ -152,7 +152,7 @@
   </div>
 
   <footer class="plate">
-    <div class="plate__no">07/10</div>
+    <div class="plate__no">06/09</div>
     <div class="plate__title">留乘智行 · 验证与评价</div>
     <div class="plate__meta">2026-08 · SCALE 1:1 · ZW</div>
   </footer>

@@ -1,5 +1,5 @@
-<section class="slide" id="s6">
-  <div class="ghost-no" aria-hidden="true">06</div>
+<section class="slide" id="s5">
+  <div class="ghost-no" aria-hidden="true">05</div>
   <div class="cross cross--tl" aria-hidden="true"></div>
   <div class="cross cross--tr" aria-hidden="true"></div>
   <div class="cross cross--bl" aria-hidden="true"></div>
@@ -25,7 +25,7 @@
               <span class="chip">OSM 拓扑</span>
             </div>
             <div class="principle-desc">
-              构建站点层、物理路网层与动态需求拓扑层的三层图结构。包含 558 个核心站点与 16,740 条拓扑边，承接纽约曼哈顿 270 万条真实出行订单，全域需求可达率达到 99.88%。
+              我用 OSM 数据搭建了三层图：物理路网、路由图、调度图，一共 558 个核心站点、16,740 条边。把纽约曼哈顿 270 万条真实订单放上去跑，99.88% 的需求都接得住。
             </div>
           </div>
 
@@ -35,7 +35,7 @@
               <span class="chip">代价重构</span>
             </div>
             <div class="principle-desc">
-              寻路机制跳出离散单步选点逻辑，重构为评估候选路径的综合代价。将乘客绕行时间代价与潜在流失风险显式编码为边特征，边级 Q 值网络直接输出下一跳路径决策。
+              常规调度每一步只需要选择下一个节点，我把决策改成评估整条候选路的综合代价：绕行代价和流失风险都编码成边特征，由边级 Q 值输出下一跳。
             </div>
           </div>
 
@@ -45,17 +45,17 @@
               <span class="chip">连续惩罚项</span>
             </div>
             <div class="principle-desc">
-              基于时空图神经网络聚合路网动态，将车辆额定容量与乘客最长容忍等待等硬约束改写为可微连续惩罚项，保障高并发下的求解稳定性与平滑收敛。
+              时空图神经网络负责聚合路网动态；车辆容量、乘客最长等待这些硬约束，我改写成连续惩罚项放进目标函数，高并发下训练依然稳定收敛。
             </div>
           </div>
         </div>
 
         <div class="redline">
-          决策视角：从离散选点重构为候选路径边级代价评估，与导航 Agent 的偏好效用折算及软约束求解一脉相承。
+          从「选择下一个节点」到「评估每条候选路」，这个决策视角和导航 Agent 给路线排序是一脉相承的。
         </div>
 
         <div class="link-row">
-          <a class="btn btn--primary" href="#s7">查看验证数据与消融实验</a>
+          <a class="btn btn--primary" href="#s6">看验证数据与消融实验</a>
           <a class="btn btn--ghost" href="https://github.com/Jonah-Wu23/Churn-Aware-GNN-RL" target="_blank" rel="noopener noreferrer">查看 GitHub 源码</a>
         </div>
       </div>
@@ -69,7 +69,7 @@
                 <img src="assets/img/lc-map.png" alt="曼哈顿核心区域 OSM 三层拓扑路网底图" loading="lazy">
               </div>
               <div class="fig__caption">
-                <span>FIG 06-1 / OSM 三层拓扑路网</span>
+                <span>FIG 05-1 / OSM 三层拓扑路网</span>
                 <span class="dim">558 站点 · 16,740 拓扑边</span>
               </div>
             </div>
@@ -81,7 +81,7 @@
                 <img src="assets/img/lc-arch.png" alt="流失感知时空图神经网络与边级决策架构" loading="lazy">
               </div>
               <div class="fig__caption">
-                <span>FIG 06-2 / 时空图神经网络与边级决策</span>
+                <span>FIG 05-2 / 时空图神经网络与边级决策</span>
                 <span class="dim">GNN SPATIO-TEMPORAL ROUTING</span>
               </div>
             </div>
@@ -92,7 +92,7 @@
   </div>
 
   <footer class="plate">
-    <div class="plate__no">06/10</div>
+    <div class="plate__no">05/09</div>
     <div class="plate__title">留乘智行 · 路网与寻路重构</div>
     <div class="plate__meta">2026-08 · SCALE 1:1 · ZW</div>
   </footer>

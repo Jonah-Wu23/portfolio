@@ -16,7 +16,7 @@
       </h2>
 
       <div class="tagline reveal">
-        <span class="hl">产品判断</span> 导航 Agent 原型 · 效用模型与软约束决策落地
+        <span class="hl">产品判断</span> 我给导航 Agent 拟定的四条判断，每一条都写进了代码里
       </div>
     </header>
 
@@ -30,7 +30,7 @@
               <span class="chip">感知代价折算</span>
             </div>
             <div class="principle-desc">
-              排序看感知代价。耗时之外计算耗时波动、转向次数、信号灯与过路费，统一折算为等价分钟进行路径评估。
+              最快的不一定是最好的。耗时之外，波动、转向次数、信号灯、过路费全部折算成等价分钟参与排序，不同维度才能直接比较大小。
             </div>
           </div>
 
@@ -40,7 +40,7 @@
               <span class="chip">阈值即额度</span>
             </div>
             <div class="principle-desc">
-              「晚 5 分钟」即为阈值额度。绕开代价 ≤ 阈值就执行绕行；超出额度时不硬绕并明确说明原因，支持一键提额。
+              「晚 5 分钟」直接变成一个阈值额度：绕开的代价在额度以内就绕行，超出额度就不强制绕行，把原因说明白，再给一个「提到 10 分钟」的一键按钮。
             </div>
           </div>
 
@@ -50,7 +50,7 @@
               <span class="chip">透明控制台</span>
             </div>
             <div class="principle-desc">
-              每条偏好带原话、时间、来源场景、置信度与应用次数；阈值支持拖动微调，可随时暂停、删除或查看流水。
+              每条偏好都留着你的原话、时间、来源场景、置信度和应用次数。阈值可以拖动，偏好可以暂停、可以删除，每一步都有流水可以查看。
             </div>
           </div>
 
@@ -60,7 +60,7 @@
               <span class="chip">额度尺审计</span>
             </div>
             <div class="principle-desc">
-              改推前先展示解析卡片，改推时给出新旧方案对比、额度尺消耗、逐维度折算明细与被否决方案的理由。
+              改推荐之前先展示解析卡片，改的时候给出新旧对比、额度尺和逐项折算明细，被否决的方案为什么被否决，也写得清清楚楚。
             </div>
           </div>
         </div>
@@ -79,9 +79,9 @@
         </div>
 
         <div class="stat-frame reveal" style="padding: 12px 14px;">
-          <div class="stat-frame__num stat-frame__num--red" style="font-size: 2.2rem;">4 项</div>
+          <div class="stat-frame__num stat-frame__num--red" style="font-size: 2.2rem;">4 条</div>
           <div class="stat-frame__label">
-            产品哲学完整落入 scoring 算法、状态机与 ExplainCard 组件
+            每一条都落在 scoring 算法、状态机和 ExplainCard 组件里，有代码对账
           </div>
         </div>
       </div>
@@ -90,12 +90,12 @@
     <div class="link-row reveal" style="margin-top: 12px;">
       <a class="btn btn--primary" href="#s4">下一页：Demo 闭环演示 →</a>
       <a class="btn btn--ghost" href="https://navigation-buddy.vercel.app" target="_blank" rel="noopener noreferrer">在线体验 Web Demo ↗</a>
-      <span class="chip">有完整产品判断与可运行闭环的 Agent 原型</span>
+      <span class="chip">判断全部落地，原型可以直接运行</span>
     </div>
   </div>
 
   <footer class="plate">
-    <div class="plate__no">03/10</div>
+    <div class="plate__no">03/09</div>
     <div class="plate__title">NAVIGATION BUDDY · 产品判断</div>
     <div class="plate__meta">2026-08 · 制图 ZW</div>
   </footer>
