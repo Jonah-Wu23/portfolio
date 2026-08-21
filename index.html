@@ -1,0 +1,1291 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>吴宗河 Zonghe Wu · AI Product × Agent × Mobility · 作品集</title>
+  <meta name="description" content="吴宗河作品集 · 腾讯地图 AI 产品经理培训生（导航 Agent 方向）· 2027 届。让空间智能看清前路，让AI伴随读懂人心。">
+  <meta name="author" content="吴宗河 Zonghe Wu">
+
+  <!-- Open Graph / Social Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="吴宗河 Zonghe Wu · AI Product × Agent × Mobility · 作品集">
+  <meta property="og:description" content="让空间智能看清前路，让AI伴随读懂人心。">
+  <meta property="og:image" content="og.png">
+  <meta property="og:url" content="https://jonah-wu23.github.io/portfolio/">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="吴宗河 Zonghe Wu · AI Product × Agent × Mobility · 作品集">
+  <meta name="twitter:description" content="让空间智能看清前路，让AI伴随读懂人心。">
+  <meta name="twitter:image" content="og.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <!-- Google Fonts Preconnect & CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;650;700&display=swap" media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;650;700&display=swap">
+  </noscript>
+
+  <!-- Style Sheets (In Order) -->
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+
+  <!-- Deferred Scripts -->
+  <script defer src="assets/js/flip.js"></script>
+  <script defer src="assets/js/main.js"></script>
+</head>
+<body>
+
+  <!-- Global Navigation Chrome: Top HUD -->
+  <header class="site-header" id="site-header" aria-label="全局站点导航">
+    <div class="site-header__brand">ZONGHE WU · PORTFOLIO</div>
+    <nav class="site-header__links" aria-label="外部链接">
+      <a class="chip site-header__chip" href="https://jonah-wu23.github.io" target="_blank" rel="noopener noreferrer">主页 ↗</a>
+      <a class="chip site-header__chip" href="https://space.bilibili.com/328348048" target="_blank" rel="noopener noreferrer">B 站 ↗</a>
+    </nav>
+  </header>
+
+  <!-- Horizontal Slide Deck Container -->
+  <main class="deck" id="deck" tabindex="0" aria-label="作品集幻灯片">
+
+    <section class="slide blueprint-panel" id="s1">
+  <div class="ghost-no" aria-hidden="true">01</div>
+  <div class="cross cross--tl" aria-hidden="true"></div>
+  <div class="cross cross--tr" aria-hidden="true"></div>
+  <div class="cross cross--bl" aria-hidden="true"></div>
+  <div class="cross cross--br" aria-hidden="true"></div>
+
+  <div class="slide__inner">
+    <!-- Blueprint Route Overlay Graphic -->
+    <div class="blueprint-graphic" aria-hidden="true">
+      <svg viewBox="0 0 900 420" fill="none" xmlns="http://www.w3.org/2000/svg" class="blueprint-svg">
+        <defs>
+          <pattern id="bp-grid-pattern" width="40" height="40" patternUnits="userSpaceOnUse">
+            <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(237,241,255,0.08)" stroke-width="1" />
+          </pattern>
+        </defs>
+        <rect width="900" height="420" fill="url(#bp-grid-pattern)" />
+        
+        <!-- Base Grid Coordinate Lines -->
+        <line x1="80" y1="40" x2="80" y2="380" stroke="rgba(237,241,255,0.18)" stroke-dasharray="4 4" stroke-width="1" />
+        <line x1="450" y1="40" x2="450" y2="380" stroke="rgba(237,241,255,0.18)" stroke-dasharray="4 4" stroke-width="1" />
+        <line x1="820" y1="40" x2="820" y2="380" stroke="rgba(237,241,255,0.18)" stroke-dasharray="4 4" stroke-width="1" />
+        <line x1="40" y1="210" x2="860" y2="210" stroke="rgba(237,241,255,0.18)" stroke-dasharray="4 4" stroke-width="1" />
+
+        <!-- Road Network Context (Muted) -->
+        <path d="M 90 320 L 260 320 L 390 260 L 580 260 L 710 140 L 810 140" stroke="rgba(237,241,255,0.22)" stroke-width="2" stroke-linejoin="round" />
+        <path d="M 260 320 L 320 180 L 520 180 L 650 90 L 810 90" stroke="rgba(237,241,255,0.18)" stroke-width="1.5" stroke-dasharray="6 6" stroke-linejoin="round" />
+
+        <!-- Agent Preferred Re-routed Path (Redline Highlight) -->
+        <path d="M 90 320 L 220 320 L 320 180 L 480 180 L 590 110 L 730 110 L 810 90" stroke="#E30613" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
+
+        <!-- Route Waypoints -->
+        <circle cx="90" cy="320" r="5" fill="#EDF1FF" stroke="#1B2F7A" stroke-width="2" />
+        <text x="90" y="345" fill="#EDF1FF" font-family="monospace" font-size="11" text-anchor="middle">ORIGIN [31.2304, 121.4737]</text>
+
+        <circle cx="320" cy="180" r="4" fill="#E30613" />
+        <text x="320" y="165" fill="#EDF1FF" font-family="monospace" font-size="10" text-anchor="middle">WAYPOINT 01 // AVOID CONGESTION</text>
+
+        <circle cx="590" cy="110" r="4" fill="#E30613" />
+        <text x="590" y="95" fill="#EDF1FF" font-family="monospace" font-size="10" text-anchor="middle">WAYPOINT 02 // UTILITY RE-WEIGHT</text>
+
+        <circle cx="810" cy="90" r="5" fill="#E30613" stroke="#EDF1FF" stroke-width="2" />
+        <text x="810" y="70" fill="#EDF1FF" font-family="monospace" font-size="11" text-anchor="middle">DEST [31.2988, 121.5842]</text>
+
+        <!-- Technical Telemetry Labels -->
+        <text x="100" y="70" fill="rgba(237,241,255,0.45)" font-family="monospace" font-size="10">ROUTE_EVAL: OPTIMAL_UTILITY</text>
+        <text x="100" y="86" fill="rgba(237,241,255,0.45)" font-family="monospace" font-size="10">BUDGET_DELTA: -4.2 MIN / PENALTY: 0.00</text>
+      </svg>
+    </div>
+
+    <div class="kicker reveal">
+      腾讯地图 AI 产品经理培训生（导航 Agent 方向）· 2027 届
+    </div>
+
+    <h1 class="slide-title reveal">
+      吴宗河 <span class="dim">Zonghe Wu</span>
+    </h1>
+
+    <div class="tagline reveal">
+      <span class="redline">AI</span> Product · Agent · <span class="redline">Mobility</span>
+    </div>
+
+    <p class="reveal" style="font-size: 1.25rem; font-weight: 500; color: #EDF1FF; margin-bottom: 20px;">
+      「让空间智能看清前路，让AI伴随读懂人心。」
+    </p>
+    <p class="reveal" style="font-size: 0.9375rem; color: rgba(237,241,255,0.72); margin-bottom: 24px;">
+      路网决策与 Agent 产品都真实做过，现在把两者接起来。
+    </p>
+
+    <div class="social-row reveal">
+      <a class="chip" href="https://github.com/Jonah-Wu23" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a class="chip" href="https://space.bilibili.com/328348048" target="_blank" rel="noopener noreferrer">B 站主页</a>
+      <a class="chip" href="mailto:3582584159@qq.com">3582584159@qq.com</a>
+    </div>
+
+    <div class="link-row reveal">
+      <a class="btn btn--primary" href="#s2">查看全部作品</a>
+      <a class="btn btn--ghost" href="https://navigation-buddy.vercel.app" target="_blank" rel="noopener noreferrer">直接体验 Navigation Buddy</a>
+    </div>
+
+    <div class="dim reveal">
+      ← 横向滑动或使用方向键 →
+    </div>
+  </div>
+
+  <footer class="plate">
+    <div class="plate__no">01/10</div>
+    <div class="plate__title">COVER · 封面</div>
+    <div class="plate__meta">2026-08 · 制图 ZW</div>
+  </footer>
+</section>
+
+    <section class="slide blueprint-panel" id="s2">
+  <div class="ghost-no" aria-hidden="true">02</div>
+  <div class="cross cross--tl" aria-hidden="true"></div>
+  <div class="cross cross--tr" aria-hidden="true"></div>
+  <div class="cross cross--bl" aria-hidden="true"></div>
+  <div class="cross cross--br" aria-hidden="true"></div>
+
+  <div class="slide__inner">
+    <div class="kicker reveal">
+      INDEX // 02 · 目录与索引
+    </div>
+
+    <h2 class="slide-title reveal">
+      项目索引 <span class="dim">Project Directory</span>
+    </h2>
+
+    <div class="index-list">
+      <!-- Item 01 -->
+      <article class="index-item reveal">
+        <div class="index-item__num redline">01</div>
+        <div class="index-item__main">
+          <div class="index-item__header">
+            <h3 class="index-item__title">Navigation Buddy · 智能导航 Demo</h3>
+            <span class="chip">智能导航原型</span>
+          </div>
+          <p class="index-item__tagline">
+            自然语言偏好解析为软约束与长期记忆，重排候选路线并支持跨场景生效，让导航更懂用户
+          </p>
+        </div>
+        <div class="link-row">
+          <a class="btn btn--primary" href="#s3">幻灯片 #s3</a>
+          <a class="btn btn--ghost" href="https://navigation-buddy.vercel.app" target="_blank" rel="noopener noreferrer">在线体验</a>
+        </div>
+      </article>
+
+      <!-- Item 02 -->
+      <article class="index-item reveal">
+        <div class="index-item__num redline">02</div>
+        <div class="index-item__main">
+          <div class="index-item__header">
+            <h3 class="index-item__title">留乘智行 · 需求响应公交调度系统</h3>
+            <span class="chip">智能调度系统</span>
+          </div>
+          <p class="index-item__tagline">
+            融合乘客流失感知与空间公平机制，图强化学习动态路径优化与运力分配，降低小汽车出行需求
+          </p>
+        </div>
+        <div class="link-row">
+          <a class="btn btn--primary" href="#s6">幻灯片 #s6</a>
+          <a class="btn btn--ghost" href="https://github.com/Jonah-Wu23/Churn-Aware-GNN-RL" target="_blank" rel="noopener noreferrer">开源仓库</a>
+        </div>
+      </article>
+
+      <!-- Item 03 -->
+      <article class="index-item reveal">
+        <div class="index-item__num redline">03</div>
+        <div class="index-item__main">
+          <div class="index-item__header">
+            <h3 class="index-item__title">HSR Partner Harness · 角色 × Agent 双轨工作台</h3>
+            <span class="chip">双轨 AI 工作台</span>
+          </div>
+          <p class="index-item__tagline">
+            角色陪伴对话与本地编程 Agent 整合，自主委派任务与真实操作项目文件，结果回传闭环
+          </p>
+        </div>
+        <div class="link-row">
+          <a class="btn btn--primary" href="#s8">幻灯片 #s8</a>
+          <a class="btn btn--ghost" href="https://jonah-wu23.github.io/HSR_Partner_Harness/" target="_blank" rel="noopener noreferrer">访问项目网站</a>
+        </div>
+      </article>
+
+      <!-- Item 04 -->
+      <article class="index-item reveal">
+        <div class="index-item__num redline">04</div>
+        <div class="index-item__main">
+          <div class="index-item__header">
+            <h3 class="index-item__title">Anima Companion · 多模态 3D 陪伴产品</h3>
+            <span class="chip">产品在线</span>
+          </div>
+          <p class="index-item__tagline">
+            融合 LLM、语音交互与 3D 角色技术，多角色切换、换装与回忆相册，获 19 名用户自发付费
+          </p>
+        </div>
+        <div class="link-row">
+          <a class="btn btn--primary" href="#s9">幻灯片 #s9</a>
+          <a class="btn btn--ghost" href="https://anima-companion.fun" target="_blank" rel="noopener noreferrer">访问产品</a>
+        </div>
+      </article>
+
+      <!-- Item 05 -->
+      <article class="index-item reveal">
+        <div class="index-item__num redline">05</div>
+        <div class="index-item__main">
+          <div class="index-item__header">
+            <h3 class="index-item__title">开源生态（DeepSeek Harness 插件开发）与联系</h3>
+            <span class="chip">开源生态</span>
+          </div>
+          <p class="index-item__tagline">
+            oh-my-dsh、全栈开发整合包等桌面与插件分发体系，以及个人联系方式
+          </p>
+        </div>
+        <div class="link-row">
+          <a class="btn btn--primary" href="#s10">幻灯片 #s10</a>
+          <a class="btn btn--ghost" href="https://github.com/Jonah-Wu23" target="_blank" rel="noopener noreferrer">GitHub 主页</a>
+        </div>
+      </article>
+    </div>
+  </div>
+
+  <footer class="plate">
+    <div class="plate__no">02/10</div>
+    <div class="plate__title">INDEX · 目录</div>
+    <div class="plate__meta">2026-08 · 制图 ZW</div>
+  </footer>
+</section>
+
+    <section class="slide" id="s3">
+  <div class="ghost-no" aria-hidden="true">03</div>
+  <div class="cross cross--tl" aria-hidden="true"></div>
+  <div class="cross cross--tr" aria-hidden="true"></div>
+  <div class="cross cross--bl" aria-hidden="true"></div>
+  <div class="cross cross--br" aria-hidden="true"></div>
+
+  <div class="slide__inner">
+    <header class="slide__header">
+      <div class="kicker reveal">
+        01 / NAVIGATION BUDDY · PRODUCT JUDGMENT <span class="coord">SEC 02 // 03</span>
+      </div>
+
+      <h2 class="slide-title reveal">
+        从「最快路线」到「懂我的路线」
+      </h2>
+
+      <div class="tagline reveal">
+        <span class="hl">产品判断</span> 导航 Agent 原型 · 效用模型与软约束决策落地
+      </div>
+    </header>
+
+    <div class="grid-12" style="align-items: start; margin-top: 8px;">
+      <!-- Left Column: Four Core Philosophies -->
+      <div class="col-7">
+        <div class="principle-list">
+          <div class="principle-item highlight reveal">
+            <div class="principle-head">
+              <span>01 · 效用 ≠ ETA</span>
+              <span class="chip">感知代价折算</span>
+            </div>
+            <div class="principle-desc">
+              排序看感知代价。耗时之外计算耗时波动、转向次数、信号灯与过路费，统一折算为等价分钟进行路径评估。
+            </div>
+          </div>
+
+          <div class="principle-item highlight reveal">
+            <div class="principle-head">
+              <span>02 · 偏好是软约束</span>
+              <span class="chip">阈值即额度</span>
+            </div>
+            <div class="principle-desc">
+              「晚 5 分钟」即为阈值额度。绕开代价 ≤ 阈值就执行绕行；超出额度时不硬绕并明确说明原因，支持一键提额。
+            </div>
+          </div>
+
+          <div class="principle-item highlight reveal">
+            <div class="principle-head">
+              <span>03 · 记忆可见可控可溯源可删</span>
+              <span class="chip">透明控制台</span>
+            </div>
+            <div class="principle-desc">
+              每条偏好带原话、时间、来源场景、置信度与应用次数；阈值支持拖动微调，可随时暂停、删除或查看流水。
+            </div>
+          </div>
+
+          <div class="principle-item highlight reveal">
+            <div class="principle-head">
+              <span>04 · 解释先于惊喜</span>
+              <span class="chip">额度尺审计</span>
+            </div>
+            <div class="principle-desc">
+              改推前先展示解析卡片，改推时给出新旧方案对比、额度尺消耗、逐维度折算明细与被否决方案的理由。
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Candidate Routes Overview & Core Metric Frame -->
+      <div class="col-5">
+        <div class="fig reveal" style="margin-bottom: 16px;">
+          <div class="fig__img" style="height: 230px;">
+            <img src="assets/img/nb-run-4.png" alt="Navigation Buddy 三条候选路线底图" loading="lazy" />
+          </div>
+          <div class="fig__caption">
+            <span>FIG 03-1 · 三条候选路线底图</span>
+            <span>SVG 路网几何 / 多维特征标注</span>
+          </div>
+        </div>
+
+        <div class="stat-frame reveal">
+          <div class="stat-frame__num stat-frame__num--red">4 项</div>
+          <div class="stat-frame__label">
+            产品哲学完整落入 scoring 算法、状态机与 ExplainCard 组件
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="link-row reveal" style="margin-top: 16px;">
+      <a class="btn btn--primary" href="#s4">下一页：Demo 闭环演示 →</a>
+      <a class="btn btn--ghost" href="https://navigation-buddy.vercel.app" target="_blank" rel="noopener noreferrer">在线体验 Web Demo ↗</a>
+      <span class="chip">有完整产品判断与可运行闭环的 Agent 原型</span>
+    </div>
+  </div>
+
+  <footer class="plate">
+    <div class="plate__no">03/10</div>
+    <div class="plate__title">NAVIGATION BUDDY · 产品判断</div>
+    <div class="plate__meta">2026-08 · 制图 ZW</div>
+  </footer>
+</section>
+
+    <section class="slide" id="s4">
+  <div class="ghost-no" aria-hidden="true">04</div>
+  <div class="cross cross--tl" aria-hidden="true"></div>
+  <div class="cross cross--tr" aria-hidden="true"></div>
+  <div class="cross cross--bl" aria-hidden="true"></div>
+  <div class="cross cross--br" aria-hidden="true"></div>
+
+  <div class="slide__inner">
+    <header class="slide__header">
+      <div class="kicker reveal">
+        01 / NAVIGATION BUDDY · DEMO CLOSED LOOP <span class="coord">SEC 02 // 04</span>
+      </div>
+
+      <h2 class="slide-title reveal">
+        Demo 闭环：从单句偏好到跨场景主动推荐
+      </h2>
+
+      <div class="tagline reveal">
+        <span class="hl">可运行闭环</span> 一句话输入 · 约束建模 · 状态机推进 · 跨场景主动生效
+      </div>
+    </header>
+
+    <!-- Horizontal Flow Link -->
+    <div class="flow reveal" style="margin: 6px 0 14px 0;">
+      <div class="flow__node">一句话偏好</div>
+      <div class="flow__arrow"></div>
+      <div class="flow__node">解析成带阈值的软约束</div>
+      <div class="flow__arrow"></div>
+      <div class="flow__node">存入本地记忆</div>
+      <div class="flow__arrow"></div>
+      <div class="flow__node">重排候选路线</div>
+      <div class="flow__arrow"></div>
+      <div class="flow__node">额度尺解释权衡</div>
+      <div class="flow__arrow"></div>
+      <div class="flow__node is-highlight">换场景主动应用</div>
+    </div>
+
+    <!-- 3 Scenarios Grid -->
+    <div class="grid-12" style="align-items: start;">
+      <!-- Scenario 1 -->
+      <div class="col-4">
+        <div class="fig reveal" style="margin-bottom: 10px;">
+          <div class="fig__img" style="height: 155px;">
+            <img src="assets/img/nb-run-1.png" alt="默认最快方案" loading="lazy" />
+          </div>
+          <div class="fig__caption">
+            <span>FIG 04-1 · 场景 1 初始</span>
+            <span>默认最快方案</span>
+          </div>
+        </div>
+        <div class="principle-item reveal">
+          <div class="principle-head">
+            <span>场景 1 · 早高峰通勤</span>
+            <span class="chip">置信度 96%</span>
+          </div>
+          <div class="principle-desc">
+            输入「宁愿晚 5 分钟，也不走小路」；解析卡片识别避开小路与 5 分钟额度，改推民生路主线 25 分钟，额度尺显示用掉 4/5 分钟。
+          </div>
+        </div>
+      </div>
+
+      <!-- Scenario 2 -->
+      <div class="col-4">
+        <div class="fig reveal" style="margin-bottom: 10px;">
+          <div class="fig__img" style="height: 155px;">
+            <img src="assets/img/nb-run-2.png" alt="说出偏好后改推并解释" loading="lazy" />
+          </div>
+          <div class="fig__caption">
+            <span>FIG 04-2 · 偏好生效</span>
+            <span>改推并解释</span>
+          </div>
+        </div>
+        <div class="principle-item reveal">
+          <div class="principle-head">
+            <span>场景 2 · 夜间接人</span>
+            <span class="chip">偏好代价 +5</span>
+          </div>
+          <div class="principle-desc">
+            切换场景无需重新说明，记忆主动生效；河堤小道标注偏好代价 +5 分钟掉至备选，自动改推 21 分钟的兴业街主线。
+          </div>
+        </div>
+      </div>
+
+      <!-- Scenario 3 -->
+      <div class="col-4">
+        <div class="fig reveal" style="margin-bottom: 10px;">
+          <div class="fig__img" style="height: 155px;">
+            <img src="assets/img/nb-run-3.png" alt="换场景记忆主动生效" loading="lazy" />
+          </div>
+          <div class="fig__caption">
+            <span>FIG 04-3 · 跨场景记忆</span>
+            <span>换场景主动应用</span>
+          </div>
+        </div>
+        <div class="principle-item reveal">
+          <div class="principle-head">
+            <span>场景 3 · 周末去老街</span>
+            <span class="chip">超额不硬绕</span>
+          </div>
+          <div class="principle-desc">
+            绕开小路需多花 9 分钟超出 5 分钟额度，系统不硬绕；卡片提供「把额度提到 10 分钟」操作，点击即改推环城绕行。
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Actions Row -->
+    <div class="link-row reveal" style="margin-top: 14px;">
+      <a class="btn btn--primary" href="https://navigation-buddy.vercel.app" target="_blank" rel="noopener noreferrer">在线体验 Web Demo ↗</a>
+      <a class="btn btn--ghost" href="https://navigation-buddy.vercel.app/selfcheck" target="_blank" rel="noopener noreferrer">自检页 (/selfcheck) ↗</a>
+      <a class="btn btn--ghost" href="#s5">下一页：工程与设计证据 →</a>
+      <span class="chip">支持拖动阈值、暂停/删除记忆与完整溯源流水</span>
+    </div>
+  </div>
+
+  <footer class="plate">
+    <div class="plate__no">04/10</div>
+    <div class="plate__title">NAVIGATION BUDDY · DEMO 闭环</div>
+    <div class="plate__meta">2026-08 · 制图 ZW</div>
+  </footer>
+</section>
+
+    <section class="slide" id="s5">
+  <div class="ghost-no" aria-hidden="true">05</div>
+  <div class="cross cross--tl" aria-hidden="true"></div>
+  <div class="cross cross--tr" aria-hidden="true"></div>
+  <div class="cross cross--bl" aria-hidden="true"></div>
+  <div class="cross cross--br" aria-hidden="true"></div>
+
+  <div class="slide__inner">
+    <header class="slide__header">
+      <div class="kicker reveal">
+        01 / NAVIGATION BUDDY · ENGINEERING &amp; DESIGN EVIDENCE <span class="coord">SEC 02 // 05</span>
+      </div>
+
+      <h2 class="slide-title reveal">
+        工程与设计证据：从 Figma 设计稿到零依赖交付
+      </h2>
+
+      <div class="tagline reveal">
+        <span class="hl">本人闭环</span> 全量自检断言 · 生产构建零错误 · 手写 SVG 路网 · 规范设计稿
+      </div>
+    </header>
+
+    <!-- 4 Metrics Frames -->
+    <div class="grid-12" style="margin: 6px 0 14px 0;">
+      <div class="col-3">
+        <div class="stat-frame reveal">
+          <div class="stat-frame__num stat-frame__num--red">23/23</div>
+          <div class="stat-frame__label">/selfcheck 全自动化断言通过</div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="stat-frame reveal">
+          <div class="stat-frame__num">0 Error</div>
+          <div class="stat-frame__label">npm run typecheck 与 build 零报错</div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="stat-frame reveal">
+          <div class="stat-frame__num">0 Lib</div>
+          <div class="stat-frame__label">手写 SVG 路网，零外部地图 SDK 依赖</div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="stat-frame reveal">
+          <div class="stat-frame__num">4 Views</div>
+          <div class="stat-frame__label">Figma 完整交互设计稿与规范交付</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4 Figma Screenshots Grid -->
+    <div class="grid-12" style="margin-bottom: 10px;">
+      <div class="col-3">
+        <div class="fig reveal">
+          <div class="fig__img" style="height: 120px;">
+            <img src="assets/img/nb-figma-1.png" alt="Figma 设计稿 1：路线概览与底图" loading="lazy" />
+          </div>
+          <div class="fig__caption">
+            <span>FIG 05-1</span>
+            <span>路线概览与底图</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="fig reveal">
+          <div class="fig__img" style="height: 120px;">
+            <img src="assets/img/nb-figma-2.png" alt="Figma 设计稿 2：偏好输入与解析" loading="lazy" />
+          </div>
+          <div class="fig__caption">
+            <span>FIG 05-2</span>
+            <span>偏好解析卡片</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="fig reveal">
+          <div class="fig__img" style="height: 120px;">
+            <img src="assets/img/nb-figma-3.png" alt="Figma 设计稿 3：重排决策与额度尺" loading="lazy" />
+          </div>
+          <div class="fig__caption">
+            <span>FIG 05-3</span>
+            <span>重排决策与额度尺</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="fig reveal">
+          <div class="fig__img" style="height: 120px;">
+            <img src="assets/img/nb-figma-4.png" alt="Figma 设计稿 4：记忆管理与溯源" loading="lazy" />
+          </div>
+          <div class="fig__caption">
+            <span>FIG 05-4</span>
+            <span>记忆管理与溯源</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Redline Boundary Requirement -->
+    <div class="redline reveal">
+      当前 Demo 范围：路线与路况为设计好的静态数据、解析为规则式、记忆存浏览器 localStorage
+    </div>
+
+    <!-- Action Links -->
+    <div class="link-row reveal" style="margin-top: 12px;">
+      <a class="btn btn--primary" href="https://github.com/Jonah-Wu23/navigation-buddy" target="_blank" rel="noopener noreferrer">GitHub 开源仓库 ↗</a>
+      <a class="btn btn--ghost" href="https://www.figma.com/design/6uaUY8SpbOlius27vVEOtW/Navigation-Buddy-%E2%80%94-Product-Demo--Copy-?t=Lo09ns6Oj7srK5E6-1" target="_blank" rel="noopener noreferrer">Figma 在线设计稿 ↗</a>
+      <a class="chip" href="https://navigation-buddy.vercel.app/selfcheck" target="_blank" rel="noopener noreferrer">自检页 (/selfcheck) ↗</a>
+      <a class="btn btn--ghost" href="#s6">下一项目：留乘智行 →</a>
+    </div>
+  </div>
+
+  <footer class="plate">
+    <div class="plate__no">05/10</div>
+    <div class="plate__title">NAVIGATION BUDDY · 工程与设计证据</div>
+    <div class="plate__meta">2026-08 · 制图 ZW</div>
+  </footer>
+</section>
+
+    <section class="slide" id="s6">
+  <div class="ghost-no" aria-hidden="true">06</div>
+  <div class="cross cross--tl" aria-hidden="true"></div>
+  <div class="cross cross--tr" aria-hidden="true"></div>
+  <div class="cross cross--bl" aria-hidden="true"></div>
+  <div class="cross cross--br" aria-hidden="true"></div>
+
+  <div class="slide__inner">
+    <div class="kicker reveal">
+      PROJECT 02 // 留乘智行 · 需求响应公交智能调度系统
+      <span class="coord">[40.7831° N, 73.9712° W]</span>
+    </div>
+
+    <h2 class="slide-title reveal">
+      路网建模与寻路机制重构 <span class="dim">OSM Graph Topology &amp; Edge-level Cost Evaluation</span>
+    </h2>
+
+    <div class="grid-12">
+      <!-- Left Column: Technical Principles (Col 5) -->
+      <div class="col-5 reveal">
+        <div class="principle-list">
+          <div class="principle-item is-highlight">
+            <div class="principle-head">
+              <span>01 / 三层图拓扑建模</span>
+              <span class="chip">OSM 拓扑</span>
+            </div>
+            <div class="principle-desc">
+              构建站点层、物理路网层与动态需求拓扑层的三层图结构。包含 558 个核心站点与 16,740 条拓扑边，承接纽约曼哈顿 270 万条真实出行订单，全域需求可达率达到 99.88%。
+            </div>
+          </div>
+
+          <div class="principle-item is-highlight">
+            <div class="principle-head">
+              <span>02 / 边级综合代价评估</span>
+              <span class="chip">代价重构</span>
+            </div>
+            <div class="principle-desc">
+              寻路机制跳出离散单步选点逻辑，重构为评估候选路径的综合代价。将乘客绕行时间代价与潜在流失风险显式编码为边特征，边级 Q 值网络直接输出下一跳路径决策。
+            </div>
+          </div>
+
+          <div class="principle-item">
+            <div class="principle-head">
+              <span>03 / 强化学习与连续约束</span>
+              <span class="chip">连续惩罚项</span>
+            </div>
+            <div class="principle-desc">
+              基于时空图神经网络聚合路网动态，将车辆额定容量与乘客最长容忍等待等硬约束改写为可微连续惩罚项，保障高并发下的求解稳定性与平滑收敛。
+            </div>
+          </div>
+        </div>
+
+        <div class="redline">
+          决策视角：从离散选点重构为候选路径边级代价评估，与导航 Agent 的偏好效用折算及软约束求解一脉相承。
+        </div>
+
+        <div class="link-row">
+          <a class="btn btn--primary" href="#s7">查看验证数据与消融实验</a>
+          <a class="btn btn--ghost" href="https://github.com/Jonah-Wu23/Churn-Aware-GNN-RL" target="_blank" rel="noopener noreferrer">查看 GitHub 源码</a>
+        </div>
+      </div>
+
+      <!-- Right Column: Map & Architecture Evidence (Col 7) -->
+      <div class="col-7 reveal">
+        <div class="fig">
+          <div class="fig__img">
+            <img src="assets/img/lc-map.png" alt="曼哈顿核心区域 OSM 三层拓扑路网底图" loading="lazy">
+          </div>
+          <div class="fig__caption">
+            <span>FIG 06-1 / 曼哈顿核心区域 OSM 三层拓扑路网</span>
+            <span class="dim">558 核心站点 · 16,740 拓扑边 · 270万 真实订单</span>
+          </div>
+        </div>
+
+        <div class="fig">
+          <div class="fig__img">
+            <img src="assets/img/lc-arch.png" alt="流失感知时空图神经网络与边级决策架构" loading="lazy">
+          </div>
+          <div class="fig__caption">
+            <span>FIG 06-2 / 流失感知时空图神经网络与边级 Q 值决策架构</span>
+            <span class="dim">GNN SPATIO-TEMPORAL AGGREGATION &amp; ROUTING</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="plate">
+    <div class="plate__no">06/10</div>
+    <div class="plate__title">留乘智行 · 路网与寻路重构</div>
+    <div class="plate__meta">2026-08 · SCALE 1:1 · ZW</div>
+  </footer>
+</section>
+
+    <section class="slide" id="s7">
+  <div class="ghost-no" aria-hidden="true">07</div>
+  <div class="cross cross--tl" aria-hidden="true"></div>
+  <div class="cross cross--tr" aria-hidden="true"></div>
+  <div class="cross cross--bl" aria-hidden="true"></div>
+  <div class="cross cross--br" aria-hidden="true"></div>
+
+  <div class="slide__inner">
+    <div class="kicker reveal">
+      PROJECT 02 // 留乘智行 · 需求响应公交智能调度系统
+      <span class="coord">[34.2655° N, 108.9542° E]</span>
+    </div>
+
+    <h2 class="slide-title reveal">
+      多维性能验证与消融实验 <span class="dim">Empirical Validation, Ablation &amp; Field Research</span>
+    </h2>
+
+    <div class="grid-12">
+      <!-- Left Column: Metrics & Theoretical Grounding (Col 6) -->
+      <div class="col-6 reveal">
+        <!-- 4 Key Quantitative Metrics Grid -->
+        <div class="grid-12" style="margin-bottom: 16px;">
+          <div class="col-6">
+            <div class="stat-frame">
+              <div class="stat-frame__num is-red">+42.8%</div>
+              <div class="stat-frame__label">900s 小汽车替代出行时间较 MAPPO 提升</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="stat-frame">
+              <div class="stat-frame__num is-red">-41.9%</div>
+              <div class="stat-frame__label">算法性流失率大幅降低较 MAPPO</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="stat-frame">
+              <div class="stat-frame__num">70.68%</div>
+              <div class="stat-frame__label">长期需求出清稳态服务率</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="stat-frame">
+              <div class="stat-frame__num is-red">2.44%</div>
+              <div class="stat-frame__label">消融实验：移除边级决策模块后服务率骤降</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="principle-list">
+          <div class="principle-item is-highlight">
+            <div class="principle-head">
+              <span>01 / 双指标联动与尾部风险约束</span>
+              <span class="chip">空间公平</span>
+            </div>
+            <div class="principle-desc">
+              采用服务率与 P95 等待双指标评估，针对最差 5% 乘客施加尾部等待风险约束，平衡全域调度效率与局部服务公平。
+            </div>
+          </div>
+
+          <div class="principle-item">
+            <div class="principle-head">
+              <span>02 / 真实场景落地与实地调研</span>
+              <span class="chip">交科赛省三</span>
+            </div>
+            <div class="principle-desc">
+              开发 OSM 底图调度监控大屏，结合西安公交枢纽实地调研验证运行约束。项目荣获全国大学生交通运输科技大赛陕西赛区三等奖。
+            </div>
+          </div>
+        </div>
+
+        <div class="link-row" style="margin-top: 16px;">
+          <a class="btn btn--primary" href="https://github.com/Jonah-Wu23/Churn-Aware-GNN-RL" target="_blank" rel="noopener noreferrer">访问 GitHub 开源仓库</a>
+          <a class="btn btn--ghost" href="#s8">下一案例：HSR Partner Harness</a>
+        </div>
+      </div>
+
+      <!-- Right Column: Empirical Evidence Charts & Awards (Col 6) -->
+      <div class="col-6 reveal">
+        <div class="grid-12">
+          <!-- Figure 1: Short-term Perf -->
+          <div class="col-6">
+            <div class="fig">
+              <div class="fig__img">
+                <img src="assets/img/lc-perf.png" alt="900秒短期运营窗口下的性能对比" loading="lazy">
+              </div>
+              <div class="fig__caption">
+                <span>FIG 07-1 / 900s 运营窗口性能对比</span>
+                <span class="dim">+42.8% 时间 / -41.9% 流失</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Figure 2: Steady-state Perf -->
+          <div class="col-6">
+            <div class="fig">
+              <div class="fig__img">
+                <img src="assets/img/lc-steady.png" alt="长期需求出清稳态下的性能对比" loading="lazy">
+              </div>
+              <div class="fig__caption">
+                <span>FIG 07-2 / 长期稳态需求出清</span>
+                <span class="dim">稳态服务率 70.68%</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Figure 3: Ablation Study -->
+          <div class="col-6">
+            <div class="fig">
+              <div class="fig__img">
+                <img src="assets/img/lc-ablation.png" alt="核心网络组件的消融实验" loading="lazy">
+              </div>
+              <div class="fig__caption">
+                <span>FIG 07-3 / 核心网络消融实验</span>
+                <span class="dim">无边决策服务率降至 2.44%</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Figure 4: Console UI -->
+          <div class="col-6">
+            <div class="fig">
+              <div class="fig__img">
+                <img src="assets/img/lc-console.png" alt="系统控制台界面与OSM调度监控大屏" loading="lazy">
+              </div>
+              <div class="fig__caption">
+                <span>FIG 07-4 / 调度控制台大屏</span>
+                <span class="dim">OSM 底图实时路网监控</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Figure 5: Award Certificate -->
+          <div class="col-12">
+            <div class="fig">
+              <div class="fig__img">
+                <img src="assets/img/lc-award.jpg" alt="全国大学生交通运输科技大赛陕西赛区三等奖证书" loading="lazy">
+              </div>
+              <div class="fig__caption">
+                <span>FIG 07-5 / 竞赛获奖证书</span>
+                <span class="dim">全国大学生交通运输科技大赛陕西赛区三等奖</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="plate">
+    <div class="plate__no">07/10</div>
+    <div class="plate__title">留乘智行 · 验证与评价</div>
+    <div class="plate__meta">2026-08 · SCALE 1:1 · ZW</div>
+  </footer>
+</section>
+
+    <section class="slide" id="s8">
+  <div class="ghost-no" aria-hidden="true">08</div>
+  <div class="cross cross--tl" aria-hidden="true"></div>
+  <div class="cross cross--tr" aria-hidden="true"></div>
+  <div class="cross cross--bl" aria-hidden="true"></div>
+  <div class="cross cross--br" aria-hidden="true"></div>
+
+  <div class="slide__inner">
+    <header class="slide__header">
+      <div class="kicker reveal">
+        PROJECT 03 // HSR PARTNER HARNESS · ROLE × AGENT DUAL-TRACK WORKBENCH
+        <span class="coord">SEC 04 // 08</span>
+      </div>
+
+      <h2 class="slide-title reveal">
+        角色 × Agent 双轨 AI 搭档工作台
+      </h2>
+
+      <div class="tagline reveal">
+        <span class="hl">双轨工作流</span> 角色陪伴 · 结构化委派 · 本地工程执行 · 确定性安全拦截
+      </div>
+    </header>
+
+    <!-- Core Flow -->
+    <div class="flow reveal" style="margin: 4px 0 12px 0;">
+      <div class="flow__node">用户</div>
+      <div class="flow__arrow"></div>
+      <div class="flow__node is-highlight">人格化 Buddy</div>
+      <div class="flow__arrow"></div>
+      <div class="flow__node">结构化委派</div>
+      <div class="flow__arrow"></div>
+      <div class="flow__node is-highlight">Agent 真实执行</div>
+      <div class="flow__arrow"></div>
+      <div class="flow__node">结果回传</div>
+      <div class="flow__arrow"></div>
+      <div class="flow__node">Buddy 继续判断</div>
+    </div>
+
+    <div class="grid-12" style="align-items: start;">
+      <!-- Left Column: Product Judgment, Capabilities & Engineering Stats -->
+      <div class="col-7">
+        <div class="redline reveal" style="margin-top: 0; margin-bottom: 10px;">
+          产品判断：AI 代码生成不再稀缺后，人的理解与监督成为新瓶颈。
+        </div>
+
+        <div class="principle-list">
+          <div class="principle-item is-highlight reveal">
+            <div class="principle-head">
+              <span>01 · 角色理解需求并发起结构化委派</span>
+              <span class="chip">意图解析</span>
+            </div>
+            <div class="principle-desc">
+              角色深度融入陪伴语境，自然理解用户需求并发起带环境边界与明确产物的结构化委派。
+            </div>
+          </div>
+
+          <div class="principle-item reveal">
+            <div class="principle-head">
+              <span>02 · Agent 本地真实执行与证据回传</span>
+              <span class="chip">审视追问</span>
+            </div>
+            <div class="principle-desc">
+              Agent 在本地项目真实执行任务，代码修改与测试证据回传会话后，Buddy 继续审视追问。
+            </div>
+          </div>
+
+          <div class="principle-item reveal">
+            <div class="principle-head">
+              <span>03 · 声音复刻与全双工语音链路</span>
+              <span class="chip">VAD 聆听</span>
+            </div>
+            <div class="principle-desc">
+              按键说话加 VAD 自动聆听，打通 ASR→LLM→TTS 完整链路，复刻角色专属音色。
+            </div>
+          </div>
+
+          <div class="principle-item reveal">
+            <div class="principle-head">
+              <span>04 · 文件沙箱与高危命令拦截</span>
+              <span class="chip">确定性拦截</span>
+            </div>
+            <div class="principle-desc">
+              文件沙箱与高危命令审批由确定性代码执行，越界真实拦截；BYOK 零服务器成本。
+            </div>
+          </div>
+        </div>
+
+        <!-- Engineering Data Grid -->
+        <div class="grid-12 reveal" style="margin-top: 10px;">
+          <div class="col-3">
+            <div class="stat-frame" style="padding: 10px 12px;">
+              <div class="stat-frame__num is-red" style="font-size: 1.5rem;">201 次</div>
+              <div class="stat-frame__label">10 天提交</div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="stat-frame" style="padding: 10px 12px;">
+              <div class="stat-frame__num" style="font-size: 1.5rem;">5.2 万行</div>
+              <div class="stat-frame__label">代码规模</div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="stat-frame" style="padding: 10px 12px;">
+              <div class="stat-frame__num" style="font-size: 1.5rem;">650 项</div>
+              <div class="stat-frame__label">自动化测试</div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="stat-frame" style="padding: 10px 12px;">
+              <div class="stat-frame__num is-red" style="font-size: 1.5rem;">1,600+</div>
+              <div class="stat-frame__label">B 站演示播放</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="link-row reveal" style="margin-top: 12px;">
+          <a class="btn btn--primary" href="https://jonah-wu23.github.io/HSR_Partner_Harness/" target="_blank" rel="noopener noreferrer">访问项目站 ↗</a>
+          <a class="btn btn--ghost" href="https://github.com/Jonah-Wu23/HSR_Partner_Harness" target="_blank" rel="noopener noreferrer">GitHub 仓库 ↗</a>
+          <a class="btn btn--ghost" href="https://www.bilibili.com/video/BV1YR8L61EYs" target="_blank" rel="noopener noreferrer">B 站演示视频 ↗</a>
+          <span class="chip">Windows 安装包分发</span>
+        </div>
+      </div>
+
+      <!-- Right Column: Visual Evidence & UI Frames -->
+      <div class="col-5">
+        <!-- Main UI Frame -->
+        <div class="fig reveal" style="margin-bottom: 8px;">
+          <div class="fig__img" style="height: 180px;">
+            <img src="assets/img/hsr-ui.jpg" alt="HSR Partner Harness 角色会话与 Agent 结构化委派执行界面" loading="lazy" />
+          </div>
+          <div class="fig__caption">
+            <span>FIG 08-1 · 角色对话与 Agent 执行界面</span>
+            <span>B 站演示视频抽帧</span>
+          </div>
+        </div>
+
+        <!-- Split Bottom Row: Git Evidence & Promo Title -->
+        <div class="grid-12">
+          <div class="col-6">
+            <div class="fig reveal">
+              <div class="fig__img" style="height: 110px;">
+                <img src="assets/img/hsr-git.jpg" alt="GitHub 提交记录、Releases 与测试证据" loading="lazy" />
+              </div>
+              <div class="fig__caption">
+                <span>FIG 08-2 · 提交与测试证据</span>
+                <span>GitHub Releases</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6">
+            <div class="fig reveal">
+              <div class="fig__img" style="height: 110px;">
+                <img src="assets/img/hsr-title.png" alt="HSR Partner Harness 一条会话两条工作轨标题卡" loading="lazy" />
+              </div>
+              <div class="fig__caption">
+                <span>FIG 08-3 · 宣传片标题卡</span>
+                <span>双轨工作台架构</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="plate">
+    <div class="plate__no">08/10</div>
+    <div class="plate__title">HSR PARTNER HARNESS · 双轨搭档工作台</div>
+    <div class="plate__meta">2026-08 · SCALE 1:1 · 制图 ZW</div>
+  </footer>
+</section>
+
+    <section class="slide" id="s9">
+  <div class="ghost-no" aria-hidden="true">09</div>
+  <div class="cross cross--tl" aria-hidden="true"></div>
+  <div class="cross cross--tr" aria-hidden="true"></div>
+  <div class="cross cross--bl" aria-hidden="true"></div>
+  <div class="cross cross--br" aria-hidden="true"></div>
+
+  <div class="slide__inner">
+    <header class="slide__header">
+      <div class="kicker reveal">
+        PROJECT 04 // ANIMA COMPANION · MULTIMODAL 3D AI COMPANION
+        <span class="coord">SEC 05 // 09</span>
+      </div>
+
+      <h2 class="slide-title reveal">
+        多模态 3D AI 角色陪伴产品
+      </h2>
+
+      <div class="tagline reveal">
+        <span class="hl">C 端产品落地</span> 0→1 独立交付 · 真实用户验证 · 19 名用户付费（VIP / 自愿赞助）
+      </div>
+    </header>
+
+    <div class="grid-12" style="align-items: start; margin-top: 6px;">
+      <!-- Left Column: 0->1 Story, Personality & Memory, Voice Resilience & Stats -->
+      <div class="col-7">
+        <div class="redline reveal" style="margin-top: 0; margin-bottom: 12px;">
+          面向 C 端上线验证：从产品规范、全链路打通到真实用户付费闭环。
+        </div>
+
+        <div class="principle-list">
+          <div class="principle-item is-highlight reveal">
+            <div class="principle-head">
+              <span>01 · 0→1 规范与独立交付</span>
+              <span class="chip">4 周 MVP</span>
+            </div>
+            <div class="principle-desc">
+              传统 AI 聊天无法与 3D 角色互动且缺乏语音对话，二次元用户对长期陪伴要求高；独立撰写包含线框与接口契约的产品规范，4 周上线 MVP。
+            </div>
+          </div>
+
+          <div class="principle-item reveal">
+            <div class="principle-head">
+              <span>02 · 人格一致性与跨轮回读记忆</span>
+              <span class="chip">YAML 配置化</span>
+            </div>
+            <div class="principle-desc">
+              首轮注入知识库，好感度跨轮回读，人设采用 YAML 模块化配置，支持多角色即时切换与换装间互动。
+            </div>
+          </div>
+
+          <div class="principle-item reveal">
+            <div class="principle-head">
+              <span>03 · 语音链路韧性与线上稳定性</span>
+              <span class="chip">自动降级</span>
+            </div>
+            <div class="principle-desc">
+              打通 VAD→ASR→LLM→TTS 全链路，配置主备供应商自动降级策略，从日志定位修复线上问题。
+            </div>
+          </div>
+        </div>
+
+        <!-- Quantitative User Evidence Grid -->
+        <div class="grid-12 reveal" style="margin-top: 12px;">
+          <div class="col-4">
+            <div class="stat-frame" style="padding: 10px 14px;">
+              <div class="stat-frame__num is-red" style="font-size: 1.55rem;">2,924 次</div>
+              <div class="stat-frame__label">B 站演示播放</div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="stat-frame" style="padding: 10px 14px;">
+              <div class="stat-frame__num" style="font-size: 1.55rem;">约 185 人</div>
+              <div class="stat-frame__label">访问（02-22至03-22）</div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="stat-frame" style="padding: 10px 14px;">
+              <div class="stat-frame__num is-red" style="font-size: 1.55rem;">19 名</div>
+              <div class="stat-frame__label">用户付费（VIP / 自愿赞助）</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="link-row reveal" style="margin-top: 12px;">
+          <a class="btn btn--primary" href="https://anima-companion.fun" target="_blank" rel="noopener noreferrer">访问在线产品 ↗</a>
+          <a class="btn btn--ghost" href="https://github.com/Jonah-Wu23/anima-companion" target="_blank" rel="noopener noreferrer">GitHub 仓库 ↗</a>
+          <a class="btn btn--ghost" href="https://www.bilibili.com/video/BV1STfPBgEWV" target="_blank" rel="noopener noreferrer">B 站演示视频 ↗</a>
+          <a class="btn btn--ghost" href="#s10">开源与联系 →</a>
+        </div>
+      </div>
+
+      <!-- Right Column: Visual Evidence (Chat UI + Wardrobe + Architecture Mindmap) -->
+      <div class="col-5">
+        <!-- Main Chat UI Frame -->
+        <div class="fig reveal" style="margin-bottom: 8px;">
+          <div class="fig__img" style="height: 180px;">
+            <img src="assets/img/anima-chat.png" alt="Anima Companion 3D 角色空间与全双工聊天交互界面" loading="lazy" />
+          </div>
+          <div class="fig__caption">
+            <span>FIG 09-1 · 3D 空间与 Chat 交互界面</span>
+            <span>全双工语音 / VAD 聆听</span>
+          </div>
+        </div>
+
+        <!-- Split Bottom Row: Wardrobe & Mindmap -->
+        <div class="grid-12">
+          <div class="col-6">
+            <div class="fig reveal">
+              <div class="fig__img" style="height: 110px;">
+                <img src="assets/img/anima-wardrobe.png" alt="角色换装间与外观形态切换界面" loading="lazy" />
+              </div>
+              <div class="fig__caption">
+                <span>FIG 09-2 · 角色换装间</span>
+                <span>外观形态切换</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6">
+            <div class="fig reveal">
+              <div class="fig__img" style="height: 110px;">
+                <img src="assets/img/anima-album.jpg" alt="回忆相册与情感交互记忆沉淀界面" loading="lazy" />
+              </div>
+              <div class="fig__caption">
+                <span>FIG 09-3 · 回忆相册</span>
+                <span>跨轮记忆沉淀</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="plate">
+    <div class="plate__no">09/10</div>
+    <div class="plate__title">ANIMA COMPANION · 多模态 3D 陪伴</div>
+    <div class="plate__meta">2026-08 · SCALE 1:1 · 制图 ZW</div>
+  </footer>
+</section>
+
+    <section class="slide" id="s10">
+  <div class="ghost-no" aria-hidden="true">10</div>
+  <div class="cross cross--tl" aria-hidden="true"></div>
+  <div class="cross cross--tr" aria-hidden="true"></div>
+  <div class="cross cross--bl" aria-hidden="true"></div>
+  <div class="cross cross--br" aria-hidden="true"></div>
+
+  <div class="slide__inner">
+    <div class="kicker reveal">
+      05 · OPEN SOURCE &amp; CONTACT
+    </div>
+
+    <h2 class="slide-title reveal">
+      开源生态（DeepSeek Harness 插件开发）与联系 <span class="dim">Open Source &amp; Contact</span>
+    </h2>
+
+    <!-- Open Source Section -->
+    <div class="oss-section reveal">
+      <div class="kicker">
+        OPEN SOURCE REPOSITORIES // 四个核心开源仓库
+      </div>
+      
+      <div class="oss-list">
+        <!-- Repository 1 -->
+        <article class="oss-item">
+          <div class="oss-item__header">
+            <h3 class="oss-item__title">oh-my-dsh</h3>
+            <span class="chip">CLI 工具面</span>
+          </div>
+          <p class="oss-item__desc">
+            固定工具面 / Session Event Log / 能力路由 / 长程恢复 / 上下文压缩
+          </p>
+          <a class="chip" href="https://github.com/Jonah-Wu23/oh-my-dsh" target="_blank" rel="noopener noreferrer">
+            GitHub 仓库 ↗
+          </a>
+        </article>
+
+        <!-- Repository 2 -->
+        <article class="oss-item">
+          <div class="oss-item__header">
+            <h3 class="oss-item__title">dsh-bg-carousel</h3>
+            <span class="chip">UI 组件</span>
+          </div>
+          <p class="oss-item__desc">
+            DSH 动态背景轮播与主题交互增强插件
+          </p>
+          <a class="chip" href="https://github.com/Jonah-Wu23/dsh-bg-carousel" target="_blank" rel="noopener noreferrer">
+            GitHub 仓库 ↗
+          </a>
+        </article>
+
+        <!-- Repository 3 -->
+        <article class="oss-item">
+          <div class="oss-item__header">
+            <h3 class="oss-item__title">dsh-web-wrapper</h3>
+            <span class="chip">桌面分发</span>
+          </div>
+          <p class="oss-item__desc">
+            DSH Web 的桌面分发与进程生命周期管理
+          </p>
+          <a class="chip" href="https://github.com/Jonah-Wu23/dsh-web-wrapper" target="_blank" rel="noopener noreferrer">
+            GitHub 仓库 ↗
+          </a>
+        </article>
+
+        <!-- Repository 4 -->
+        <article class="oss-item">
+          <div class="oss-item__header">
+            <h3 class="oss-item__title">dsh-fullstack-pack</h3>
+            <span class="chip">整合包</span>
+          </div>
+          <p class="oss-item__desc">
+            DeepSeek Harness 全栈开发整合包：8 个核心插件、Tauri 桌面原生壳与便携运行时
+          </p>
+          <a class="chip" href="https://github.com/Jonah-Wu23/dsh-fullstack-pack" target="_blank" rel="noopener noreferrer">
+            GitHub 仓库 ↗
+          </a>
+        </article>
+      </div>
+    </div>
+
+    <!-- Contact & Channels Section -->
+    <div class="contact-section reveal">
+      <div class="kicker">
+        COMMUNICATION CHANNELS // 联系渠道与主页
+      </div>
+
+      <div class="contact-grid">
+        <a class="chip" href="tel:13646028118">电话 13646028118</a>
+        <a class="chip" href="mailto:3582584159@qq.com">邮箱 3582584159@qq.com</a>
+        <a class="chip" href="https://github.com/Jonah-Wu23" target="_blank" rel="noopener noreferrer">GitHub · Jonah-Wu23</a>
+        <a class="chip" href="https://space.bilibili.com/328348048" target="_blank" rel="noopener noreferrer">B 站主页</a>
+        <a class="chip" href="https://jonah-wu23.github.io" target="_blank" rel="noopener noreferrer">个人主页 · jonah-wu23.github.io</a>
+      </div>
+
+      <div class="dim">
+        © 2026 Zonghe Wu
+      </div>
+    </div>
+  </div>
+
+  <footer class="plate">
+    <div class="plate__no">10/10</div>
+    <div class="plate__title">CONTACT · 开源与联系</div>
+    <div class="plate__meta">2026-08 · 制图 ZW</div>
+  </footer>
+</section>
+
+  </main>
+
+  <!-- Global Slide Navigation Chrome: Bottom HUD -->
+  <nav class="slide-nav" id="slide-nav" aria-label="幻灯片翻页导航">
+    <div class="slide-nav__count" id="slide-nav-count" aria-live="polite">01 / 10</div>
+    <div class="slide-nav__dots" id="slide-nav-dots" role="tablist" aria-label="幻灯片快速跳转">
+      <!-- Injected by main.js -->
+    </div>
+  </nav>
+
+</body>
+</html>
