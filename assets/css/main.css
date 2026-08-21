@@ -1326,12 +1326,13 @@ div.fig__img img {
     box-sizing: border-box !important;
   }
 
-  /* 隐藏所有浮动导航与调试元素，防止生成多余页面 */
+  /* 隐藏所有浮动导航、图签栏与调试元素，防止遮挡正文与生成多余页面 */
   .site-header,
   .slide-nav,
   .nav-prompt,
   .actions,
-  .preview-badge {
+  .preview-badge,
+  .plate {
     display: none !important;
   }
 
@@ -1347,9 +1348,4 @@ div.fig__img img {
     break-inside: avoid !important;
   }
 
-  .plate {
-    position: absolute !important;
-    bottom: 24px !important;
-    right: 32px !important;
-  }
 }
